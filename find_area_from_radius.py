@@ -12,30 +12,29 @@ Return the area of the circle and thank them for using the script
 
 import time
 import math
-from colorama import Fore
 
 # Countdown Starting Number
 # i = 3
 
 # Input for User's Name
 usr_name = input("Enter your name here: ")
-print(Fore.RED + str(type(usr_name)))
+print(str(type(usr_name)))
 
 time.sleep(1)
 
 # Welcome Text and Decription
-print(Fore.WHITE + "Welcome, " + Fore.GREEN + usr_name)
-print(Fore.WHITE + "I am here to calulate the area of a circle of your choosing")
+print("Welcome, " + usr_name)
+print("I am here to calulate the area of a circle of your choosing")
 
 time.sleep(1)
 
 # Where User Enters Radius of their Circle
 r_circle = input("Please enter the radius of your circle: ")
-print(Fore.RED + str(type(r_circle)))
+print(str(type(r_circle)))
 
 # Math to Calculate Area
 a_circle = math.pi * pow(int(r_circle), 2)
-print(Fore.GREEN + "Calulating...")
+print("Calulating...")
 
 # Countdown
 
@@ -53,5 +52,5 @@ a_circle = round(a_circle, 2)
 
 time.sleep(1)
 
-print(Fore.WHITE + "The area of your circle is: " + Fore.RED + str(a_circle))
-print(Fore.WHITE + "Thank you for using my script. Come again!")
+print("The area of your circle is: "+ str(a_circle))
+print("Thank you for using my script. Come again!")
